@@ -9,6 +9,13 @@ use Prophecy\Exception\InvalidArgumentException;
 
 class GermanFactory extends FactoryMethod
 {
+    /**
+     * Создать объект
+     *
+     * @param string $type
+     *
+     * @return VehicleInterface
+     */
     protected function createVehicle(string $type): VehicleInterface
     {
         switch ($type) {

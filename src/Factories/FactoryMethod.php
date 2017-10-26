@@ -11,6 +11,13 @@ abstract class FactoryMethod
 
     abstract protected function createVehicle(string $type): VehicleInterface;
 
+    /**
+     * Создать объект из соответствующей фабрики
+     *
+     * @param string $type
+     *
+     * @return VehicleInterface
+     */
     public function create(string $type): VehicleInterface
     {
         $obj = $this->createVehicle($type);
